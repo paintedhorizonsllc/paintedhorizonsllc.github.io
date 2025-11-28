@@ -58,11 +58,12 @@
             align-items: center;
         }
         .logo {
-            font-family: "Dancing Script", cursive;
+            font-family: "Pacifico", cursive;
             font-size: 4rem;
             font-weight: bold;
             letter-spacing: 0.05em;
-            justify-content: Left
+            justify-content: Left;
+            padding: 0, 25, 0, 0;
         }
         .name {
             font-size: 1.5rem;
