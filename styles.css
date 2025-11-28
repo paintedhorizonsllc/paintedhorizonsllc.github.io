@@ -44,8 +44,6 @@
         /* ===== Header & Navigation ===== */
         header {
             display: flex;
-            justify-content: center; /* centers horizontally */
-            align-items: center;    /* centers vertically (optional) */
             padding: 20px;          /* optional */
             position: relative;
             top: 0;
@@ -62,8 +60,6 @@
             font-size: 4rem;
             font-weight: bold;
             letter-spacing: 0.05em;
-            justify-content: Left;
-            padding: 0, 25, 0, 0;
         }
         .name {
             font-size: 1.5rem;
