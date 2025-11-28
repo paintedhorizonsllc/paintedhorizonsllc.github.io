@@ -1,107 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <title>PaintedHorizonsLLC</title>
-      <link href="/favicon-16x16.png" rel="icon" type="image/png" ><!--Here is the favicon I created(3)-->
-      <link href="styles.css" rel="stylesheet">
-    </head>
-   <header>
-      <img src="Logo.jpg" alt="Logo" height="300px" width="500px">
-    
-   </header>
-   <body>
-      <ul><!--Here is my unordered list(1)-->
-         <h2>Goals😅</h2><!--Here is an emoji(5)-->
-         <li>Be a <strong>father</strong></li>
-         <li>Run a business</li>
-         <li>Get a degree </li>
-         <li>Buy <strong>&#8383</strong> (bitcoin)</li><!--Here is a special character(5)-->
-      </ul>
-      <ol type="1"><!--Here is my ordered list(1)-->
-         <h2>Interests😀</h2><!--Here is an emoji(5)-->
-         <li>Traveling</li>
-         <li>Learning</li>
-         <li>Teaching</li>
-      </ol>
-      <div>
-         <table class="border" ><!--Here is my table WITH borders(2)-->
-         <caption>Kids</caption>
-            <tr>
-               <th></th>
-               <th></th>
-            </tr>
-            <tr>
-               <td></td>
-               <td></td>
-            </tr>
-            <tr>
-               <td></td>
-               <td></td>
-            </tr>
-            <tr>
-               <td></td>
-               <td></td>
-            </tr>
-            <tr>
-               <td></td>
-               <td></td>
-            </tr>
-            <tr>
-               <td></td>
-               <td></td>
-            </tr>
-         </table>     
-      </div>
-      <table class="no-border"><!--Here is my table WITHOUT borders(2)-->
-            <caption><strong>Daily Routine</strong></caption>
-            <tr>
-               <th></th>
-               <th>Monday</th>
-               <th>Tuesday</th>
-               <th>Wednesday</th>
-               <th>Thursday</th>
-               <th>Friday</th>
-               <th>Saturday</th>
-               <th>Sunday</th>
-            </tr>
-            <tr>
-               <th>Morning</th>
-               <td>School</td>
-               <td>School</td>
-               <td>School</td>
-               <td>School</td>
-               <td>Work</td>
-               <td>Sleep</td>
-               <td>Work</td>
-            </tr>
-            <tr>
-               <th>Afternoon</th>
-               <td>Work</td>
-               <td>School</td>
-               <td>Work</td>
-               <td>School</td>
-               <td>Work</td>
-               <td>Play</td>
-               <td>Work</td>
-            </tr>
-            <tr>
-               <th>Evening</th>
-               <td>Family/Study</td>
-               <td>Family</td>
-               <td>Family/Study</td>
-               <td>Family/Study</td>
-               <td>Family</td>
-               <td>Study</td>
-               <td>Family</td>
-            </tr>
-         </table> 
-      <footer style="text-align: center">
-         <a href="https://madisoncollege.edu" target="_blank">Click Here to visit MATC.</a>
-         <!--Here is a text link that opens in a new tab(4)-->
-         <p>Click on the image below to visit the UWGB website!</p>
-         <a href="https://www.uwgb.edu" target="_blank"><img src="UWGB.png" alt="Link to UWGB website"></a>
-         <!--Here is an image link that opens in a new tab(4)-->   
-      </footer>  
-   </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <title>Painted Horizons LLC - Professional Painting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Simple CSS for layout and style -->
+    <style>
+        /* ===== Global Styles ===== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* ===== Header & Navigation ===== */
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #ffcc66;
+        }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            background: linear-gradient(
+                to right,
+                #1f2933 0%,
+                #3f4f5f 40%,
+                #f5f5f5 40%,
+                #f5f5f5 100%
+            );
+            color: #fff;
+            padding: 3rem 0;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .hero-text {
+            flex: 1 1 280px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #ffcc66;
+            color: #222;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .btn-primary:hover {
+            background-color: #ffb733;
+        }
+
+        .hero-image {
+            flex: 1 1 250px;
+            background-color: #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            color: #333;
+        }
+
+        /* ===== Section Titles ===== */
+        section {
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            width: 60px;
+            height: 3px;
+            background-color: #ffcc66;
+            display: block;
+            margin: 0.5rem auto 0;
+        }
+
+        /* ===== About Section ===== */
+        .about-text {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.05rem;
+        }
+
+        /* ===== Services Section ===== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+
+        .service-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+        }
+
+        /* ===== Gallery Section ===== */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+
+        .gallery-item div {
+            padding: 0.75rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* ===== Testimonials Section ===== */
+        .testimonials {
+            background-color: #ffffff;
+            border-radius: 6px;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .testimonial {
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial:last-child {
+            margin-bottom: 0;
+        }
+
+        .testimonial p {
+            font-style: italic;
+        }
+
+        .testimonial span {
+            display: block;
+            margin-top: 0.5rem;
+            font-weight: bold;
+        }
+
+        /* ===== Contact Section ===== */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 2rem;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+
+        form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.25rem;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .contact-info {
+            font-size: 0.98rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            .hero {
+                background: #1f2933;
+            }
+
+            .hero-content {
+                flex-direction: column;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== Header & Nav ===== -->
+    <header>
+        <div class="container nav-bar">
+            <div class="logo">Painted Horizons LLC</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
