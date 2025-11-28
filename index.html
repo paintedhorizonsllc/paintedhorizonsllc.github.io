@@ -4,15 +4,192 @@
     <meta charset="UTF-8">
     <title>Painted Horizons LLC - Professional Painting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicon-16x16.png">
+     <link rel="icon" type="image/png" href="favicon-16x16.png">
+	<link href="styles.css" rel="stylesheet">
+   
 </head>
 
 	
-	<body>	
-  <header>	
-	  	<img src="Logo.jpg" alt="Business Logo" height="220px" width="250px">      </header>      
-		<div class="name">Painted Horizons LLC</div>
-       		<li><a href="#about">About</a></li>
-  	 					
-	</body>
+	
+	
+<body>
+
+    <!-- ===== Header & Nav ===== -->
+    <header>
+        <div class="container nav-bar">
+            <div class="logo">Painted Horizons LLC</div>
+				<img src="Logo.jpg" alt="Business Logo" height="220px" width="250px">    
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Professional Painting in Door County & Beyond</h1>
+                <p>
+                    Painted Horizons LLC delivers clean lines, durable finishes, and honest communication
+                    for homes and businesses. Interior, exterior, decks, and more.
+                </p>
+                <a href="#contact" class="btn-primary">Get a Free Estimate</a>
+            </div>
+
+            <div class="hero-image">
+                <!-- You can replace this with a real image later -->
+                <p><strong>Before &amp; After</strong></p>
+                <p>Showcase a project photo here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Painted Horizons</h2>
+            <div class="about-text">
+                <p>
+                    Painted Horizons LLC is a locally owned painting company focused on quality, reliability,
+                    and clear expectations. From the first walkthrough to the final touch-up, we treat your
+                    home like our own and stand behind our work.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Exterior Painting</h3>
+                    <p>
+                        Siding, trim, doors, and decks using durable coatings designed for Wisconsin weather.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h3>Interior Painting</h3>
+                    <p>
+                        Walls, ceilings, doors, and trim with careful prep, clean edges, and minimal disruption.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h3>Deck &amp; Fence Staining</h3>
+                    <p>
+                        Protect and refresh your outdoor spaces with proper cleaning and long-lasting stains.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h3>Small Repairs &amp; Prep</h3>
+                    <p>
+                        Caulking, patching, sanding, and surface prep to make the paint job last longer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Gallery (placeholder) ===== -->
+    <section id="gallery">
+        <div class="container">
+            <h2 class="section-title">Project Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x250" alt="Painted home exterior">
+                    <div>Two-story exterior repaint – Sturgeon Bay</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x250" alt="Deck staining project">
+                    <div>Deck cleaning and staining – Door County</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x250" alt="Interior trim painting">
+                    <div>Interior trim and walls – living room refresh</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>
+                        “Mark was professional, on time, and the house looks amazing.
+                        We’ll definitely hire Painted Horizons again.”
+                    </p>
+                    <span>— Homeowner, Door County</span>
+                </div>
+                <div class="testimonial">
+                    <p>
+                        “Clear estimate, fair price, and meticulous work. Highly recommended.”
+                    </p>
+                    <span>— Repeat Customer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact & Free Estimate</h2>
+            <div class="contact-grid">
+                <!-- Simple contact form (visual only for now) -->
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" placeholder="you@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone*</label>
+                        <input type="text" id="phone" placeholder="(555) 555-5555">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Request</button>
+                </form>
+
+                <!-- Contact info -->
+                <div class="contact-info">
+                    <p><strong>Painted Horizons LLC</strong></p>
+                    <p>Door County &amp; Northeast Wisconsin</p>
+                    <p>Phone: (555) 555-5555</p>
+                    <p>Email: info@paintedhorizons.com</p>
+                    <p>Hours: By appointment</p>
+                    <p style="margin-top:1rem; font-size:0.9rem;">
+                        *This form is just visual right now. We can hook it up later
+                        using a form service or backend once the layout is ready.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>&copy; <span id="year"></span> Painted Horizons LLC. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional: small script just to auto-update the year -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
