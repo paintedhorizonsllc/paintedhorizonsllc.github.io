@@ -38,10 +38,10 @@
         /* ===== Header & Navigation ===== */
         header {
             display: flex;
-            justify-content: center; /* centers horizontally */
+            justify-content: left; /* centers horizontally */
             align-items: center;    /* centers vertically (optional) */
             padding: 20px;          /* optional */
-            position: sticky;
+            position: relative;
             top: 0;
             z-index: 10;
         }
