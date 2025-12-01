@@ -54,6 +54,17 @@ body {
 }
 
 /* Header & nav */
+.site-title {
+    justify-self: center;
+    font-size: 1.4rem;          /* “same size” headline */
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #f97316;             /* orange */
+    -webkit-text-stroke: 1px #000;
+    text-stroke: 1px #000;      /* (ignored by some browsers, fine) */
+    white-space: nowrap;
+}
 
 .site-header {
     position: sticky;
@@ -65,18 +76,23 @@ body {
 }
 
 .nav-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* logo | title | nav */
     align-items: center;
-    justify-content: space-between;
     padding-block: 0.75rem;
 }
 
 .logo {
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-self: start;
+}
+
+.logo img {
+    height: 32px;      /* tweak 28–36px if needed */
+    max-height: 32px;
+    width: auto;
+    display: block;
 }
 
 .logo span {
@@ -94,7 +110,9 @@ body {
     align-items: center;
     gap: 1.25rem;
     font-size: 0.95rem;
+    justify-self: end;          /* right side */
 }
+
 
 .main-nav a {
     text-decoration: none;
@@ -341,30 +359,27 @@ textarea:focus {
 /* Responsive */
 
 @media (max-width: 800px) {
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-
-    .main-nav {
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        font-size: 0.9rem;
-    }
-
-    .two-column,
-    .contact-layout {
+   .nav-container {
         grid-template-columns: 1fr;
+        row-gap: 0.4rem;
+        justify-items: center;
+        text-align: center;
     }
 
-    .hero {
-        min-height: 60vh;
+   .main-nav {
+        justify-self: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .hero-content {
-        min-height: 60vh;
-        padding-block: 4rem;
+    .site-title {
+        font-size: 1.2rem;
+        letter-spacing: 0.08em;
+    }
+
+    .logo img {
+        height: 26px;
+        max-height: 26px;
     }
 }
 
