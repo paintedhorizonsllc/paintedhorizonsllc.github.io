@@ -84,22 +84,16 @@ body {
 
 .logo {
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-self: start;
 }
 
 .logo img {
-    height: 32px;      /* tweak 28–36px if needed */
-    max-height: 32px;
+    height: 38px;      /* tweak 28–36px if needed */
+    max-height: 38px;
     width: auto;
     display: block;
 }
-
-.logo span {
-    color: var(--color-accent-soft);
-}
-
-
 
 .logo span {
     color: var(--color-accent-soft);
