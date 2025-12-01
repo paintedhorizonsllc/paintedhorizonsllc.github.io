@@ -60,11 +60,17 @@ body {
 }
 
 .logo {
-    height: 26px;        /* try 24–30px range */
-    max-height: 26px;
-    width: auto;
-    display: block;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--color-accent);
 }
+
+.logo span {
+    color: var(--color-accent-soft);
+}
+
 
 
 .logo span {
