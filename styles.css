@@ -60,12 +60,12 @@ body {
 }
 
 .logo {
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    color: var(--color-accent);
+    height: 26px;        /* try 24–30px range */
+    max-height: 26px;
+    width: auto;
+    display: block;
 }
+
 
 .logo span {
     color: var(--color-accent-soft);
