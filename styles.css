@@ -361,14 +361,14 @@ textarea:focus {
 @media (max-width: 800px) {
    .nav-container {
         grid-template-columns: 1fr;
-        row-gap: 0.4rem;
+        row-gap: 0.3rem;
         justify-items: center;
         text-align: center;
     }
 
    .main-nav {
         justify-self: center;
-        flex-wrap: wrap;
+       
         justify-content: center;
     }
 
