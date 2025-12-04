@@ -151,30 +151,43 @@
                         Tell us a little about your project and we’ll follow up to schedule a walkthrough
                         and provide a detailed, written estimate.
                     </p>
-                    <form class="contact-form">
+                   <form class="contact-form"
+                          action="https://formspree.io/f/YOUR_FORM_ID"
+                          method="POST">
                         <div class="form-row">
                             <label for="name">Name*</label>
-                            <input id="name" type="text" required />
+                            <input id="name" name="name" type="text" required />
                         </div>
+                    
                         <div class="form-row">
                             <label for="email">Email*</label>
-                            <input id="email" type="email" required />
+                            <input id="email" name="email" type="email" required />
                         </div>
+                    
                         <div class="form-row">
                             <label for="phone">Phone*</label>
-                            <input id="phone" type="tel" required />
+                            <input id="phone" name="phone" type="tel" required />
                         </div>
+                    
                         <div class="form-row">
                             <label for="details">Project Details</label>
-                            <textarea id="details" rows="4"
+                            <textarea id="details"
+                                      name="details"
+                                      rows="4"
                                       placeholder="Interior, exterior, location, timing, etc."></textarea>
                         </div>
-                        <button type="submit" class="btn-primary">Send Info</button>
+                    
+                        <!-- Optional: let Formspree know where the form came from -->
+                        <input type="hidden" name="_subject" value="New Painted Horizons estimate request" />
+                    
+                        <button type="submit" class="btn-primary">Send Request</button>
+                    
                         <p class="form-note">
                             Prefer to talk? Call or text:
                             <strong>(608) 320-7687</strong>
                         </p>
                     </form>
+
                 </div>
 
                 <aside class="contact-info">
