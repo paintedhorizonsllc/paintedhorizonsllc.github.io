@@ -30,8 +30,5 @@ This site is published through **GitHub Pages**.
 - Add a **Contact** section or form
 - Improve performance (compress images, tighten CSS)
 
-## Notes
-Potentiality 🌱: every commit turns the site from “online” into “inevitable.”
-
 ## License
 All site content and branding are © Painted Horizons LLC. All rights reserved.
