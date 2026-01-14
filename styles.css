@@ -160,7 +160,7 @@ body {
 }
 
 .hero-text {
-    max-width: 40rem;
+    max-width: 40rem + 15px;
 }
 
 .hero h1 {
